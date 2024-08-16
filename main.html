@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Welcome Step -->
+            <div class="form-step" id="welcomeStep">
+                <h2>Welcome</h2>
+                <p>Please login or sign up to continue using our app.</p>
+                <p>Enter via Social Networks</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>or login with email</p>
+                <input type="email" class="input-field" id="loginEmail" placeholder="Email" oninput="checkLoginFields()">
+                <button type="button" id="loginButton" onclick="showStep('loginStep')" disabled>Sign In</button>
+                <div class="already-account">
+                    Don't have an account? <a href="javascript:void(0);" onclick="showStep('signupStep')">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- Sign Up Step -->
+            <div class="form-step" id="signupStep">
+                <h2>Sign Up</h2>
+                <p>Please register with email and sign up to continue using our app.</p>
+                <input type="email" class="input-field" id="signupEmail" placeholder="Email" oninput="checkSignupFields()">
+                <input type="text" class="input-field" id="signupUsername" placeholder="Username" oninput="checkSignupFields()">
+                <input type="password" class="input-field" id="signupPassword" placeholder="Password" oninput="checkSignupFields()">
+                <input type="password" class="input-field" id="signupConfirmPassword" placeholder="Confirm Password" oninput="checkSignupFields()">
+                <div class="checkbox">
+                    <input type="checkbox" id="privacy" onclick="checkSignupFields()">
+                    <span>I agree with privacy policy</span>
+                </div>
+                <button type="button" id="signupSubmitButton" onclick="handleSignup()" disabled>Sign Up</button>
+                <div class="already-account">
+                    You already have an account? <a href="javascript:void(0);" onclick="showStep('loginStep')">Login</a>
+                </div>
+            </div>
+
+            <!-- Login Step -->
+            <div class="form-step" id="loginStep">
+                <h2>Login Now</h2>
+                <p>Please login to continue using our app.</p>
+                <p>Enter via Social Networks</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>or login with email</p>
+                <input type="text" class="input-field" id="loginUsernameOrEmail" placeholder="Username or Email" oninput="checkLoginFields()">
+                <input type="password" class="input-field" id="loginPassword" placeholder="Password" oninput="checkLoginFields()">
+                <a href="javascript:void(0);" style="color: #000000;" onclick="showStep('forgotPasswordStep')">Forgot Password?</a>
+                <button type="button" id="loginSubmitButton" onclick="handleLogin()" disabled>Submit</button>
+                <div class="already-account">
+                    Don't have an account? <a href="javascript:void(0);" onclick="showStep('signupStep')">Sign up</a>
+                </div>
+            </div>
+
+            <!-- Forgot Password Step -->
+            <div class="form-step" id="forgotPasswordStep">
+                <h2>Forgot Password</h2>
+                <p>Please enter your email address to reset your password.</p>
+                <input type="email" class="input-field" id="resetEmail" placeholder="Email" oninput="checkResetFields()">
+                <button type="button" id="resetButton" onclick="handlePasswordReset()" disabled>Reset Password</button>
+                <div class="already-account">
+                    Remembered your password? <a href="javascript:void(0);" onclick="showStep('loginStep')">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

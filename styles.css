@@ -1,0 +1,242 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("C:\\Users\\fariy\\Downloads\\fa.avif"); /* Placeholder image */
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.card {
+    width: 100%;
+    padding: 35px;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 30px;
+    color: #075efe;
+    cursor: pointer;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-field::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #dc0000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #b20000;
+}
+
+.checkbox {/* Reset some default styles */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("path/to/your/image.avif"); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px; /* Adjust padding if needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column; /* Ensure content is displayed in a column layout */
+}
+
+.card {
+    width: 100%;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust as needed */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Increase spacing between icons */
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fe0707; /* Ensure the icon color is inherited */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-field::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #dc0000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #b20000;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox input {
+    margin-right: 8px; /* Adjust spacing if needed */
+}
+
+.checkbox span {
+    color: #666;
+}
+
+.already-account {
+    margin-top: 15px;
+    text-align: center; /* Center the text for better alignment */
+}
+
+.already-account a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox input {
+    margin-right: 6px;
+}
+
+.checkbox span {
+    color: #666;
+}
+
+.already-account {
+    margin-top: 15px;
+}
+
+.already-account a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}
